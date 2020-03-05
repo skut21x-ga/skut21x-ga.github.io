@@ -1,0 +1,101 @@
+body{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+  font-family: arial;
+  text-align: center;
+  background-color: #eeefec;
+}
+
+
+h1 {
+  font-weight: 280px;
+  font-size: 20px;
+  color: #575a5d;
+  }
+
+h2 {
+  margin:-10px;
+  font-size: 9px;
+  color:#595a5c;
+  font-weight: lighter;
+}
+  
+.Row1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-flow: row;
+  font-weight: bold;
+  color: white;
+  line-height: 1000%;
+  font-size: 16px;
+  background-size:300px 190px;
+}
+
+.Image1 {
+  background-image: url("img/san-francisco.jpg");
+  background-position: center;
+  position: relative;
+  height: 190px;
+  width: 185px;
+  margin: 0px 8px 0px 8px;
+}
+
+.Image2 {
+  background-image: url("img/new-york.jpg"); 
+  background-size:300px 190px;
+  background-position: center;
+  height: 190px;
+  width: 185px;
+  margin: 0px 8px 0px 8px;
+
+}
+
+.Image3 {
+  background-image: url("img/london.jpg");
+  background-size:300px 190px;
+  background-position: center;
+  height: 190px;
+  width: 185px;
+  margin: 0px 8px 0px 8px;
+}
+
+.Image4 {
+  background-image: url("img/napa.jpg");
+  background-size:300px 190px;
+  background-position: center;
+  height: 190px;
+  width: 185px;
+  margin: 0px 8px 0px 8px;
+}
+
+.Image5 {
+  background-image: url("img/sonoma.jpg");
+  background-size:300px 190px;
+  background-position: center;
+  height: 190px;
+  width: 185px;
+  margin: 0px 8px 0px 8px;
+}
+
+.Image6 {
+  background-image: url("img/san-francisco-2.jpg");
+  background-size:300px 190px;
+  background-position: center;
+  height: 190px;
+  width: 185px;
+  margin: 0px 8px 0px 8px;
+}
+
+button {
+  width: 185px;
+  align-items: center;
+  justify-content:center;
+  color: #535456;
+  padding: 8px;
+  background-color: white;
+  border-style: solid;
+  font-weight: bold;
+}
