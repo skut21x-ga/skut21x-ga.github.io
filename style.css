@@ -516,7 +516,6 @@ footer {
 
 
     }
-}
 
 
 
@@ -665,6 +664,7 @@ footer {
    body {
    background-position-y: -100px;
    background-size: 900px;
+   margin-bottom: -10px;
    }
 
    .ourwork-photos-grid {
@@ -695,7 +695,3 @@ footer {
     #workphoto{
             min-height: 300px;}
     }
-
-
-
-}
