@@ -1,96 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <title>SNOWMOUNT</title>
-</head>
-
-<body>
-   <div class="first-section">
-    <div class="background-image">
-        <div class="top">
-             <div class="logodiv">
-                <img src="images/vinicunca.png" class="sidelogo" height="20%" width="20%">
-                <img src="images/LOGO.png" class="toplogo" width="180px"> 
-             </div>
-            <nav class="topnavbar">
-                <a class="toplink" id="active">Home</a>
-                <a class="toplink" href="#" >About</a>
-                <a class="toplink" href="#" >Contact</a>
-            <button class="hellobutton"><a class ="firstbuttontext" href="google.com">Say Hello</a></button></a>
-            </nav>
+    <link rel="stylesheet" type="text/css" charset="utf-8" href="stylesheet.css" />
+    <title>Harry Potter Main Characters</title>
+  </head>
+  <body>
+    <div class = "websiteBackgroundTop"></div>
+    <div class = "titleBar"><a>Harry Potter Character Bios</a></div>
+    <div class = "containerBig">
+    <div class = "containerBackground">
+      <div class = "tabContainer">
+          <div class = "tab" id="tab1" ><p>Harry</p></div>
+          <div class = "tab" id="tab2" ><p>Hermione</p></div>
+          <div class = "tab" id="tab3" ><p>Ron</p></div>
+          <div class = "tab" id="tab4" ><p>Random</p></div>
+      </div></div></div>
+      <div class = "characterContainer">
+      <div class = "characterViewBox">
+        <div class = "photo"><img id = "photo" src="maincharacters.png" height=300px></div>
+        <div class = "characterBio">
+          <p id = "name">Character Name</p>
+          <b>Nickname:</b> <a id="nickname">Unknown</a><p></p>
+          <b>Wand:</b> <a id="wand">Unknown</a><p></p>
+          <b>Patronus:</b> <a id="patronus">Unknown</a><p></p>
+          <b>Blood-Type: </b><a id="blood">Unknown</a>
         </div>
-        <div class="introText">
-            <h1 class="intro-h1" id="larger">Wonderful</h1>
-            <h1 class="intro-h1" id="smaller">World</h1>
-        </div>
-        <div class=workbuttondiv>
-        <button class="workbutton">Our Work →</button>
-        </div>
-    </div>
-</div>
-   <div class="aboutme">
-        <h2 id="aboutme-header" style="text-align:center">About Me</h2>
-        <h3 id="aboutme-text" style="text-align:center">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo        </h3>
-   </div>
-   <div class="ourwork-section">
-        <h3 class="ourwork-title" style="text-align:center">Our Work</h3>
-        <div class="ourwork-photos-grid">
-            <div class="photo-hut" ID="workphoto"></div>
-            <div class="photo-dog" ID="workphoto"></div>
-            <div class="photo-ski" ID="workphoto">
-                <div class="photo-overlay">
-                    <h5 class="photo-header" id="photostyle" style="text-align: center">Fly High</h5>
-                    <h5 class="photo-text" id="photostyle" style="text-align: center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</h5>
-                    <div class="see-more"><h5 class="seemoretext" style="text-align: center">See More</h5></div>
-                </div>
-            </div>
-            <div class="photo-backpack" ID="workphoto"></div>
-            <div class="photo-cross" ID="workphoto"></div>            
-        </div>
-    </div>
-    <div class="testimonial-section">
-        <h3 class="testimonial-h3" style="text-align:center">Testimonial</h3>
-        <div class="testimonal-photo"><img src="images/girl.png" alt="Girl" width="135px"></div>
-        <div class="testimonial-name" style="text-align:center">Carolyn Clark</div>
-        <div class="testimonial-quote-section">
-            <div class="testimonial-quotation-1"><img src="images/Quotes.png" alt="quote" width="30px"></div>
-            <div class="testimonial-text" style="text-align:center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</div> 
-            <div class="testimonial-quotation-2"><img src="images/Quotes.png" alt="quote" width="30px"></div>
-        </div>
-        <div class="mini-circles"><img src="images/mini-circles.png" width="50px" height="18px"></div>
-    </div> 
-</body>
-
-<footer>
-    <div class="footer-grid">
-        <div class="left-logo-desktop"><img src="images/Logo-Bottomleft.png" width="200px"></div>
-        <div class="footer-text">
-            <div id="location" class="footer-category">Location</div>
-            <span id="location-specific" class="footer-specific">Fusce at nisi eget dolor rhoncus facilisis. Mauris </span>
-            <div id="email" class="footer-category">Email</div>
-            <span id="email-specific" class="footer-specific">jessica.lee@mail.com</span>
-            <div id="phone" class="footer-category">Phone</div>
-            <span id="phone-specific" class="footer-specific">(859)749-1380</span>
-        </div>
-        <div class="social-icons-desktop">
-            <img src="images/Facebook.png" width="50px">
-            <img src="images/Instagram.png" width="50px">
-            <img src="images/Youtube.png"width="50px">
-        </div>
-    </div> 
-    <div class="social-icons-mobile">
-        <img src="images/Facebook.png" width="40px">
-        <img src="images/Instagram.png" width="40px">
-        <img src="images/Youtube.png"width="40px">
-    </div>     <br>
-    <div class="left-logo-mobile"><img src="images/Logo-Bottomleft.png" width="100px"><br></div>
-    <br><br>
-</footer>
+      <script src = "script.js"></script>
+  </div>
+  </div>
+  </div> 
+  </div>
+  </div>
+    <footer>
+      <div class="websiteBackgroundBottom"></div>
+    </footer>
+  </body>
 </html>
+
