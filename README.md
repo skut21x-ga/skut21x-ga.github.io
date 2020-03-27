@@ -16,5 +16,7 @@ This version of the game I coded almost completely from scratch aside from:
 
 > Speech Synthesis Script from: https://stackoverflow.com/questions/15653145/using-google-text-to-speech-in-javascript
 
+> Sound from https://freesound.org
+
 > Background from:
 > https://wallpaperaccess.com/
