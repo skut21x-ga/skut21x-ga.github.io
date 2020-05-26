@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+  /* ^ Code to see DIV Borders ^ */
+}
+
+body {
+  margin: 0;
+}
+
+.websiteBackgroundTop {
+  background: url("https://image.freepik.com/free-vector/wooden-wall-floor-with-aged-surface-realistic_107791-682.jpg")
+    center;
+  background-size: cover;
+  background-repeat: repeat;
+  padding-bottom: 100px;
+  box-shadow: inset 0px -20px 30px;
+}
+
+.titleBar {
+  font-family: "harry_pregular";
+  font-size: 55px;
+  text-shadow: 0.5px 0.5px 2px hsl(54, 100%, 50%);
+  display: flex;
+  border-top: 1px solid black;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-top: 13px;
+}
+
+.containerBig {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.containerBackground {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.tabContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 40px;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: lightslategray;
+  width: 100%;
+  border-top: 0.1px solid black;
+  border-right: 0.1px solid black;
+  border-bottom: 0.1px solid black;
+  border-left: 0.1px solid black;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.characterContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.characterViewBox {
+  width: 95%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: lightgray;
+}
+
+#photo {
+  margin-top: -20px;
+  height: 325px;
+}
+
+.websiteBackgroundBottom {
+  background: url("https://image.freepik.com/free-vector/wooden-wall-floor-with-aged-surface-realistic_107791-682.jpg")
+    center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  border-top: 1px solid black;
+  box-shadow: inset 0px 20px 30px;
+}
+
+#name {
+  font-size: 60px;
+  font-family: "harry_pregular";
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+.characterBio {
+  margin-left: 50px;
+  margin-right: 20px;
+  font-size: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+/* Tablets */
+@media (max-width: 800px) {
+  #photo {
+    margin-top: -30px;
+    display: "float";
+    height: 300px;
+  }
+  .websiteBackgroundTop {
+    padding-bottom: 150px;
+    box-shadow: inset 0px -10px 10px;
+  }
+  .websiteBackgroundBottom {
+    height: 150px;
+    box-shadow: inset 0px 10px 10px;
+  }
+
+  .titleBar {
+    font-family: "harry_pregular";
+    font-size: 35px;
+  }
+  #name {
+    font-size: 40px;
+    margin-top: -30px;
+  }
+  .characterBio {
+    margin-left: 20px;
+    margin-top: -50px;
+    font-size: 15px;
+    width: 300px;
+    text-align: center;
+  }
+}
+
+/* Small devices */
+@media (max-width: 600px) {
+  #photo {
+    margin-top: -50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 150px;
+  }
+  .websiteBackgroundTop {
+    padding-bottom: 100px;
+  }
+
+  .websiteBackgroundBottom {
+    height: 125px;
+  }
+
+  .titleBar {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+  }
+
+  #name {
+    font-size: 20px;
+    margin-top: 0px;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
