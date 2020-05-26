@@ -1,0 +1,80 @@
+Game of War : WHAT I NEED TO DO:
+
+- Game of War Function (Game AUTO Starts)
+ -  Card:
+	Create Object w/
+	Assign Suit (Hearts, etc)
+		Let Suits = Hearts, etc
+			Then nest and Assign Value (Ace, 1-10, J-K)
+			//need loop to assign each card value
+			// then loop values
+			- Then Assign Score for Value (points for each value) based own Index
+
+Create Deck (function)
+	w/ length (how many cards) = (52 card array)
+  	 -  collection (array of card objects - ORDERED)
+
+	Object for Players:
+	 Player1 
+		Set Name: 
+		Which Cards in Possession (HAND) 
+		Current # of Cards: HAND.LENGTH
+	 Player2
+		Set Name: 
+		Which Cards in Possession (HAND) 
+		Current # of Cards: HAND.LENGTH
+
+  
+Shuffle Deck (function)
+
+Deal Deck (function) (Each player 1/2 deck:
+		Move 1 card from deck[0] to player 1, then 1 card from deck[0] to player 2
+		Until User 2 has 26 cards
+	
+Let Round = 0
+Let Playground = []
+
+Check Player Hand length & Play a Round (Function)
+	If Player 1 Hand.length = 52 “Player 1 wins!”
+
+	Else IF
+	 Player 2 Hand.length = 52 “Player 2 wins!”
+
+	Else:
+	Function of Play Round:
+	- Add 1 to Round #
+	- Each user adds card to playground and removed from hand pop(index[0])
+	- What cards are played by each user:
+		“Player 1 plays a [CardPlayedA]” & “Player 2 plays [CardPlayedB]”
+	- Compare cards
+		- If CardPlayedA.value > CardPlayed B.value:
+		“Player 1 wins Round [ROUND#]! [CardPlayedA] beats [CardPlayedB]!”
+			Playground Array is added to Player 1 Hand Array
+			State Player1.hand.length & State Player2.hand.length
+		- ELSE If CardPlayedB.value > CardPlayed A.value:
+			“Player 2 wins Round [ROUND#]! [CardPlayedB] beats [CardPlayedA]!”
+			Playground Array is added to Player 2 Hand Array
+			State Player1.hand.length & State Player2.hand.length
+		- ELSE 
+			console.log(“Let’s go to war!”)
+			run war function
+				
+		WAR FUNCTION:
+		-Each user plays three cards to playground (don’t announce cards) 
+			- take from hand array from each player and move to playground array
+		-Each user adds fourth card to playground / removed from hand array
+		“Player 1 plays a [CardPlayedA]” & “Player 2 plays [CardPlayedB]”
+		- If CardPlayedA.value > CardPlayed B.value:
+			“Player 1 wins WAR! [CardPlayedA] beats [CardPlayedB]!”
+			Push playground array to Player 1 hand array
+			State Player1.hand.length & State Player2.hand.length
+		- ELSE If CardPlayedB.value > CardPlayed A.value:
+			“Player 2 wins the round! [CardPlayedB] beats [CardPlayedA]!”
+			Push playground array to Player 2 hand array
+			State Player1.hand.length & State Player2.hand.length
+		- ELSE WAR Function: AGAIN, etc
+
+End Game (function)
+
+
+MAKE READ ME FILE
