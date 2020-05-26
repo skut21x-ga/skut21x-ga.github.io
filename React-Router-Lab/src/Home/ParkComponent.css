@@ -1,0 +1,37 @@
+.Image {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.fade {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+}
+
+/* .fade:hover { */
+/* opacity: 0.2; */
+/* } */
+
+.ParkName {
+  float: center;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 50px;
+  z-index: +2;
+  width: 100px;
+}
+
+.parkcomponent-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  margin: 10px 20px 20px 20px;
+}

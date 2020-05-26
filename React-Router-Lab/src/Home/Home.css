@@ -1,0 +1,9 @@
+.AllParks {
+  display: flex;
+  flex-flow: wrap;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 20px 15px 10px 15px;
+  justify-content: center;
+  align-items: center;
+}
