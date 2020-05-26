@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  height: 100%;
+}
+
+.overlay {
+  transform: rotate(90deg);
+}
+
+#gameButtonName {
+  height: 100vh;
+  float: center;
+  align-self: center;
+  position: absolute;
+  font-size: 50px;
+}
+
+.gameTitle {
+  font-family: "Orbitron";
+  font-size: 30px;
+  width: 600px;
+  height: 120%;
+  border: 2px solid black;
+  box-shadow: 0px 0px 20px 5px black;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
+  text-shadow: -0.1vw 0vw 0.1vw white, -0.2vw 0vw 3vw #f0130b;
+  color: white;
+  align-items: center;
+  background-color: black;
+}
+
+.inactive {
+  border-left: 175px solid transparent;
+  border-right: 175px solid transparent;
+  border-top: 175px solid transparent;
+  border-bottom: 175px solid;
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  box-sizing: content-box;
+  margin-top: -43px;
+  margin-left: -5px;
+  padding: 20px;
+  box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 1);
+}
+
+/* ROTATE CODE FROM https://stackoverflow.com/questions/6410730/css-endless-rotation-animation  */
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes inactive {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+#animatedDiv {
+  -webkit-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+
+#nonAnimatedDiv {
+  -webkit-animation: "";
+  animation: "";
+}
+
+.muteButton {
+  margin-top: 100px;
+  height: 40px;
+  box-shadow: 0px 0px 20px 5px white;
+  background-color: white;
+  position: absolute;
+  margin-left: -33px;
+
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.unmuteButton {
+  margin-top: 100px;
+  margin-left: -33px;
+  height: 40px;
+  box-shadow: 0px 0px 20px 5px white;
+  background-color: white;
+  display: none;
+  position: absolute;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+body {
+  background-color: black;
+}
+
+.scoreboard {
+  font-family: Orbitron;
+  font-size: 60px;
+  font-stretch: expanded;
+  margin-top: -2px;
+  position: absolute;
+  text-shadow: -0.1vw 0vw 0.1vw white, -0.2vw 0vw 3vw #f0130b;
+  color: white;
+  background: black;
+}
+
+.simonCircle {
+  font-size: 40px;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  box-shadow: 0px 0px 10px 1px black;
+  display: block;
+  background-color: black;
+}
+
+.gameBackground {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.backgroundCircle1 {
+  position: absolute;
+  border: 7px solid black;
+  border-radius: 100%;
+  height: 575px;
+  width: 575px;
+  box-shadow: 0px 0px 50px 1px black;
+  display: block;
+  margin-top: 293px;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.backgroundCircle2 {
+  position: absolute;
+  border: 5px solid black;
+  border-radius: 100%;
+  height: 575px;
+  width: 575px;
+  box-shadow: 0px 0px 10px 5px black;
+  display: block;
+  margin-top: 293px;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.middlegfx {
+  height: 190px;
+  width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 286px;
+  background-color: transparent;
+}
+
+.startCircle {
+  font-size: 30px;
+  text-shadow: 0px 0px 1px;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  box-shadow: 0px 0px 5px 10px black;
+  display: block;
+}
+
+.easyMode {
+  height: 40px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 0px 20px 5px white;
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  text-shadow: 0px 1px 1px white;
+  margin-top: 50px;
+  margin-left: -457px;
+  position: absolute;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  width: 150px;
+}
+
+.hardMode {
+  height: 40px;
+  width: 160px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 0px 20px 5px white;
+  background-color: black;
+  border: 2px solid black;
+  text-shadow: 0px 1px 1px white;
+  color: white;
+  margin-left: 310px;
+  margin-top: 50px;
+  position: absolute;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.easyHighScoreTitle {
+  margin-top: 765px;
+  margin-left: -382px;
+  font-size: 20px;
+  position: absolute;
+  color: white;
+  height: 40px;
+  width: 190px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.easyHighScoreValue {
+  color: white;
+  margin-left: 10px;
+  padding-bottom: 40px;
+}
+
+.hardHighScoreTitle {
+  margin-top: 765px;
+  margin-left: 391px;
+  font-size: 20px;
+  position: absolute;
+  color: white;
+  height: 40px;
+  width: 190px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.hardHighScoreValue {
+  color: white;
+  margin-left: 10px;
+  padding-bottom: 40px;
+}
+
+.gameOverDiv {
+  background-color: black;
+  display: flex;
+  height: 100px;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 0px 2px 2px;
+  position: absolute;
+  margin-top: 325px;
+  text-shadow: 0px 0px 10px red;
+}
+
+.gameOver {
+  color: white;
+  font-size: 50px;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  text-align: left;
+  margin-left: -150px;
+  margin-top: 20px;
+}
