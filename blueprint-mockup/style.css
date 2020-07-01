@@ -7,7 +7,6 @@ body {
   font-size: 100%;
   font: inherit;
   z-index: -10;
-  max-width: 1000px;
 }
 
 html {
@@ -16,6 +15,8 @@ html {
   font-family: Lato;
   background-color: rgb(19, 119, 172);
   z-index: -10;
+  overflow-x: hidden;
+
 }
 
 body {
@@ -368,7 +369,7 @@ body {
   }
 
   .Footer-Logo {
-    /* display: none; */
+    display: none;
     margin-top: 10px;
   }
 
