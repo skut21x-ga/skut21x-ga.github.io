@@ -254,6 +254,7 @@ body {
 .Footer-Text {
   text-align: center;
   margin-top: 10px;
+  width: 500px;
 }
 
 .Privacy-Policy {
@@ -338,6 +339,12 @@ body {
 @media screen and (max-width: 650px) {
   .Header-Buttons {
     display: none;
+  }
+
+  .Footer-Text {
+    text-align: center;
+    margin-top: 10px;
+    width: 250px;
   }
   .Footer-Buttons {
     display: flex;
